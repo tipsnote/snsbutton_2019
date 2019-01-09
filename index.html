@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- mixi：mixiチェックを使用する際は、2行目の記述を以下のものに差し替え
+<html lang="ja" prefix:og="http://ogp.me/ns#" prefix:mixi="http://mixi-platform.com/ns#"> -->
+<head>
+	<meta charset="UTF-8">
+	<title>SNSボタン設置例｜Tips Note by TAM</title>
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Tips Note by TAM">
+	<meta property="og:title" content="Tips Note by TAM ｜ TAM のテクニカルチームがお届けする WEB技術ブログ！">
+	<meta property="og:url" content="https://www.tam-tam.co.jp/tipsnote/">
+	<meta property="og:description" content="TAM のテクニカルチームがお届けする WEB技術ブログ！">
+	<meta property="og:image" content="https://（画像のURL）">
+	<meta name="twitter:card" content="summary_large_image"><!-- Twitter：サムネイル（大） -->
+	<!-- <meta name="twitter:card" content="summary"> Twitter：サムネイル（小）の場合はこちらを使用 -->
+	<meta name="twitter:site" content="@tips_note">
+	<meta name="twitter:title" content="Tips Note by TAM ｜ TAM のテクニカルチームがお届けする WEB技術ブログ！">
+	<meta name="twitter:description" content="TAM のテクニカルチームがお届けする WEB技術ブログ！">
+	<meta name="twitter:image" content="https://（画像のURL）">
+	<!-- Google+：+1 ボタンの URL（ボタンを設置したページと違う場合に設定。）
+    <link rel="canonical" href="https://www.tam-tam.co.jp/tipsnote/"> -->
+    <style>
+    	body { margin:0;padding:0;box-sizing:border-box; }
+    	header,footer { max-width:100%;background-color:#ddd;margin:0;padding:30px; }
+    	main { max-width:80%;margin:50px auto 80px; }
+    	div,a,iframe { display:block;margin-bottom:30px; }
+    	h1,h2 { margin:0; }
+      	h2 { max-width:100%;margin-top:50px;padding:10px 20px; }
+      	h3,p { margin-bottom:10px; }
+      	.fb { background-color:rgba(59,89,152,0.3); }
+      	.tw { background-color:rgba(29,161,242,0.3); }
+      	.li { background-color:rgba(0,185,0,0.3); }
+      	.hb { background-color:rgba(0,164,222,0.3); }
+      	.po { background-color:rgba(238,64,86,0.3); }
+      	.go { background-color:rgba(219,68,55,0.3); }
+      	.mx { background-color:rgba(210,175,83,0.3); }
+    </style>
+</head>
+<body>
+<!-- ===== Facebook：ボタン設置用（JavaScript SDK）ここから ===== -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.0&appId=481487432015851&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- ※「appId」はダミーです。実際に設置される場合は、正式なアプリIDを取得してください。 -->
+<!-- ===== /Facebook：ボタン設置用（JavaScript SDK）ここまで ===== -->
+
+
+
+<header>ヘッダー</header>
+
+
+
+<main>
+<h1>SNSボタン設置例</h1>
+
+<h2 class="fb">Facebook</h2>
+<h3>・「いいね！」ボタン設置例（JavaScript SDK）</h3>
+<div class="fb-like" data-href="https://www.tam-tam.co.jp/tipsnote/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+
+
+<h3>・「いいね！」ボタン設置例（IFrame）</h3>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.tam-tam.co.jp%2Ftipsnote%2F&width=89&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId=481487432015851" width="89" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!-- ※「appId」はダミーです。実際に設置される場合は、正式なアプリIDを取得してください。 -->
+
+
+<h3>・シェアボタン設置例（JavaScript SDK）</h3>
+<div class="fb-share-button" data-href="https://www.tam-tam.co.jp/tipsnote/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tam-tam.co.jp%2Ftipsnote%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+
+
+<h3>・シェアボタン設置例（IFrame）</h3>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.tam-tam.co.jp%2Ftipsnote%2F&layout=button_count&size=small&mobile_iframe=true&appId=481487432015851&width=78&height=20" width="78" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!-- ※「appId」はダミーです。実際に設置される場合は、正式なアプリIDを取得してください。 -->
+
+
+<h2 class="tw">Twitter</h2>
+<h3>・ツイートボタン</h3>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ツイートボタン設置テストです！" data-url="https://www.tam-tam.co.jp/tipsnote/" data-lang="ja" data-show-count="false">Tweet</a>
+
+
+<h2 class="li">LINE</h2>
+<h3>・LINEで送るボタン</h3>
+<div class="line-it-button" data-lang="ja" data-type="share-d" data-url="https://www.tam-tam.co.jp/tipsnote/" style="display: none;"></div>
+
+
+<h2 class="hb">はてな</h2>
+<h3>・はてなブックマークボタン</h3>
+<a href="http://b.hatena.ne.jp/entry/s/www.tam-tam.co.jp/tipsnote/" class="hatena-bookmark-button" data-hatena-bookmark-layout="touch-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+
+
+<h2 class="po">Pocket</h2>
+<h3>・Pocketボタン</h3>
+<a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="ja" data-save-url="https://www.tam-tam.co.jp/tipsnote/" data-pocket-align="right"></a>
+
+
+<h2 class="go">Google+</h2>
+<h3>・+1 ボタン</h3>
+<g:plusone></g:plusone>
+
+
+<h3>・共有ボタン</h3>
+<div class="g-plus" data-action="share" data-href="https://www.tam-tam.co.jp/tipsnote/"></div>
+
+
+<h2 class="mx">mixi</h2>
+<h3>・mixiチェックボタン</h3>
+<a href="http://static.mixi.jp/share.pl" class="mixi-check-button" data-button="button-1" data-key="1234567890" data-url="https://www.tam-tam.co.jp/tipsnote/" data-show-count="yes">チェック</a>
+<!-- ※「data-key」はダミーです。実際に設置される場合は、正式なキーを取得してください。 -->
+
+<p><a href="https://www.tam-tam.co.jp/tipsnote/">→記事に戻る</a></p>
+
+</main>
+
+
+
+<footer>フッター</footer>
+
+
+
+<!-- ===== SNS設置用 JavaScript：（不要なものは削除してください。） ===== -->
+<!-- Twitter：ツイートボタン用JavaScript -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- LINE：LINEで送るボタン用JavaScript -->
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
+<!-- はてなブックマークボタン用JavaScript -->
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+<!-- Pocketボタン用JavaScript -->
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+
+<!-- Google+：+1 ボタン用JavaScript -->
+<script >
+  window.___gcfg = {
+    lang: 'ja',
+    parsetags: 'onload'
+  };
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Google+：共有ボタン用JavaScript -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'ja'}
+</script>
+
+<!-- mixi：mixiチェック用JavaScript -->
+<script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script>
+
+<!-- ===== /SNS設置用 JavaScript：ここまで（不要なものは削除してください。） ===== -->
+
+</body>
+</html>
